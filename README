@@ -1,1 +1,5 @@
-This file was created by Android Studio (I/O Preview) AI-130.721168 for binding GitHub repository
+Sample application used to test several Gradle features in the AndroiDevCC Gradle workshop.
+
+It's a very basic Twitter Feed application that shows the latest tweets matching 'AndroiDevCC'.
+
+It shows how to configure an Android project with Gradle, Android Library project, Java project, several types of dependencies (local, Maven, projects,...), etc.
