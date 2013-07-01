@@ -21,7 +21,6 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.test.InstrumentationTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
-
 import com.android.volley.NetworkResponse;
 import com.android.volley.Response;
 import com.android.volley.tests.R;

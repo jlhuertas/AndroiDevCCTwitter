@@ -17,16 +17,10 @@
 package com.android.volley;
 
 import android.test.suitebuilder.annotation.MediumTest;
-
-import com.android.volley.mock.MockCache;
-import com.android.volley.mock.MockNetwork;
-import com.android.volley.mock.MockRequest;
-import com.android.volley.mock.MockResponseDelivery;
-import com.android.volley.mock.WaitableQueue;
+import com.android.volley.mock.*;
+import junit.framework.TestCase;
 
 import java.util.Arrays;
-
-import junit.framework.TestCase;
 
 @MediumTest
 public class NetworkDispatcherTest extends TestCase {

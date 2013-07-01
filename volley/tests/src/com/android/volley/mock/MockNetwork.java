@@ -16,11 +16,7 @@
 
 package com.android.volley.mock;
 
-import com.android.volley.Network;
-import com.android.volley.NetworkResponse;
-import com.android.volley.Request;
-import com.android.volley.ServerError;
-import com.android.volley.VolleyError;
+import com.android.volley.*;
 
 public class MockNetwork implements Network {
     public final static int ALWAYS_THROW_EXCEPTIONS = -1;

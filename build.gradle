@@ -2,10 +2,26 @@
 
 buildscript {
     repositories {
-        maven { url 'http://repo1.maven.org/maven2' }
-        //mavenCentral()
+        mavenCentral()
+
+        //This is an alternative way to do the same
+        //maven { url 'http://repo1.maven.org/maven2' }
     }
     dependencies {
+        //Notice the '+' symbol to indicate dynamic dependency
+        //It will choose the newest release of the 0.4.x branch
         classpath 'com.android.tools.build:gradle:0.4.+'
     }
 }
+
+//To avoid duplicating the maven repositories in all the projects
+allprojects {
+    version = '1.0'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+
+apply plugin: 'android-reporting'

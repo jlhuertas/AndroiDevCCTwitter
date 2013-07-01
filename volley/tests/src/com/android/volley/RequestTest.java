@@ -17,9 +17,7 @@
 package com.android.volley;
 
 import android.test.suitebuilder.annotation.SmallTest;
-
 import com.android.volley.Request.Priority;
-
 import junit.framework.TestCase;
 
 @SmallTest

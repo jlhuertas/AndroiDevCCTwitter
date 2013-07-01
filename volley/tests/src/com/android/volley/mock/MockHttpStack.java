@@ -19,7 +19,6 @@ package com.android.volley.mock;
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.toolbox.HttpStack;
-
 import org.apache.http.HttpResponse;
 
 import java.util.HashMap;

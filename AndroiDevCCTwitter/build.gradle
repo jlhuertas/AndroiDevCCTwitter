@@ -1,16 +1,11 @@
 
 apply plugin: 'android'
 
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     compile files('libs/android-support-v4.jar')
     compile 'com.google.code.gson:gson:2.2.2'
     compile project(':volley')
-
-
+    compile project(':TwitterModel')
 }
 
 android {

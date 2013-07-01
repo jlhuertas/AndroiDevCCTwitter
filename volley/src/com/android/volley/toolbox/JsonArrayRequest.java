@@ -21,7 +21,6 @@ import com.android.volley.ParseError;
 import com.android.volley.Response;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.Response.Listener;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 

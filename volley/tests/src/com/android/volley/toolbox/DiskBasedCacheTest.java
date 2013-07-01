@@ -17,7 +17,6 @@
 package com.android.volley.toolbox;
 
 import android.test.AndroidTestCase;
-
 import com.android.volley.Cache;
 import com.android.volley.toolbox.DiskBasedCache.CacheHeader;
 

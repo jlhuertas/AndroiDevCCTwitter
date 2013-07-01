@@ -17,11 +17,9 @@
 package com.android.volley;
 
 import android.test.suitebuilder.annotation.MediumTest;
-
 import com.android.volley.mock.MockRequest;
 import com.android.volley.utils.CacheTestUtils;
 import com.android.volley.utils.ImmediateResponseDelivery;
-
 import junit.framework.TestCase;
 
 @MediumTest
