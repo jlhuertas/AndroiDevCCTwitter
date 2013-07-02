@@ -6,4 +6,4 @@ It shows how to configure an Android project with Gradle, Android Library projec
 
 Workshop slides [here](https://docs.google.com/presentation/d/1DwZfjFjbsReWMasiWaMjpDNbApOxr-Ll8DmBKOtuDuk/edit?usp=sharing)
 
-![screenshot](/raw/master/screenshot.png))
+![screenshot](screenshot.png?raw=true)
