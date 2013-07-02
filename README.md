@@ -5,3 +5,5 @@ It's a very basic Twitter Feed application that shows the latest tweets matching
 It shows how to configure an Android project with Gradle, Android Library project, Java project, several types of dependencies (local, Maven, projects,...), etc.
 
 Workshop slides [here](https://docs.google.com/presentation/d/1DwZfjFjbsReWMasiWaMjpDNbApOxr-Ll8DmBKOtuDuk/edit?usp=sharing)
+
+![screenshot](/raw/master/screenshot.png))
