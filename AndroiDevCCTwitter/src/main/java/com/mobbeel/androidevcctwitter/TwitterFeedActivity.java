@@ -9,7 +9,7 @@ import android.os.Bundle;
  */
 public class TwitterFeedActivity extends ListActivity {
 
-    private TweetArrayAdapter tweetAdapter;
+    public static final String DEFAULT_QUERY = "AndroiDevCC";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,16 +17,21 @@ public class TwitterFeedActivity extends ListActivity {
 
         setContentView(R.layout.activity_twitter_feed);
 
-        tweetAdapter = new TweetArrayAdapter(this);
+        TweetArrayAdapter tweetAdapter = new TweetArrayAdapter(this);
         setListAdapter(tweetAdapter);
 
-        new TwitterSearch(tweetAdapter).search("AndroiDevCC", 50);
+        TwitterSearch twitterSearch = new TwitterSearch(tweetAdapter);
+        twitterSearch.setQuery(DEFAULT_QUERY);
+
+        //listener to request more tweets when the user is near the end of the list
+        EndlessScrollListener endlessScrollListener = new EndlessScrollListener();
+        endlessScrollListener.setOnEndReachedListener(twitterSearch);
+
+        getListView().setOnScrollListener(endlessScrollListener);
+
+        //launch the first search
+        twitterSearch.search();
+
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-
-    }
 }

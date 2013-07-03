@@ -28,6 +28,8 @@ public class Tweet {
 
     private TwitterUser user;
 
+    private long id;
+
     @SerializedName("created_at")
     private String time;
 
@@ -63,5 +65,13 @@ public class Tweet {
 
         }
         return formatedDate;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
