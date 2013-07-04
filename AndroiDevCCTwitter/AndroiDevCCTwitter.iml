@@ -67,11 +67,11 @@
     </content>
     <orderEntry type="jdk" jdkName="Android 4.2.2" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="android-support-v4" level="project" />
     <orderEntry type="library" name="gson-2.2.2" level="project" />
     <orderEntry type="module" module-name="volleyutils" />
     <orderEntry type="library" name="TwitterModel-1.0" level="project" />
     <orderEntry type="library" name="volley-1.0.aar" level="project" />
+    <orderEntry type="library" name="support-v4-13.0.0" level="project" />
   </component>
 </module>
 

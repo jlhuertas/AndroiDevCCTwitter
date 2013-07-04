@@ -2,10 +2,15 @@
 apply plugin: 'android'
 
 dependencies {
-    compile files('libs/android-support-v4.jar')
-    compile 'com.google.code.gson:gson:2.2.2'
-    compile project(':volley')
-    compile project(':TwitterModel')
+    //This requires that you install the local Android and Google Maven repositories from the SDK Manager
+    //because this artifact is not present on public Maven repositories.
+    //alternatively, you can use a local jar file "compile files('libs/android-support-v4.jar')"
+    compile 'com.android.support:support-v4:13.0.0'
+
+
+    compile 'com.google.code.gson:gson:2.2.2'   //dependency from a Maven repo
+    compile project(':volley')                  //dependency from a local project
+    compile project(':TwitterModel')            //dependency from a local project
 }
 
 android {
