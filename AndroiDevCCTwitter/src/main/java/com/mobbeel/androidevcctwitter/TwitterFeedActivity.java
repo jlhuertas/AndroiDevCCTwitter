@@ -11,10 +11,11 @@ import com.actionbarsherlock.view.Window;
  */
 public class TwitterFeedActivity extends SherlockListActivity implements SearchListener {
 
-    public static final String DEFAULT_QUERY = "twitter";
+    public static final String DEFAULT_QUERY = "AndroiDevCC";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_Sherlock_Light);
         super.onCreate(savedInstanceState);
 
         //This has to be called before setContentView and you must use the
