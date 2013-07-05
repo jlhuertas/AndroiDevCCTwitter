@@ -53,6 +53,11 @@ public class TwitterSearch implements Response.Listener<TwitterSearchResult>, Re
      */
     private int count = DEFAULT_COUNT_VALUE;
 
+    /**
+     * Listener to be notified when the searches start or end.
+     */
+    private SearchListener searchListener;
+
 
     public TwitterSearch(ArrayAdapter<Tweet> adapter) {
         this.adapter = adapter;
@@ -77,6 +82,10 @@ public class TwitterSearch implements Response.Listener<TwitterSearchResult>, Re
         }
 
         VolleyManager.getRequestQueue().add(new GsonRequest<TwitterSearchResult>(SEARCH_URL, params, createTwitterAuthHeaders(), TwitterSearchResult.class, this, this));
+
+        if (searchListener != null) {
+            searchListener.onSearchStarted();
+        }
     }
 
 
@@ -89,6 +98,10 @@ public class TwitterSearch implements Response.Listener<TwitterSearchResult>, Re
     @Override
     public void onErrorResponse(VolleyError volleyError) {
         Log.e(TwitterFeedApp.LOG_TAG, "Error with the Twitter response", volleyError);
+
+        if (searchListener != null) {
+            searchListener.onSearchEnded();
+        }
     }
 
     @Override
@@ -104,6 +117,10 @@ public class TwitterSearch implements Response.Listener<TwitterSearchResult>, Re
         }
 
         adapter.notifyDataSetChanged();
+
+        if (searchListener != null) {
+            searchListener.onSearchEnded();
+        }
     }
 
     public String getQuery() {
@@ -133,5 +150,9 @@ public class TwitterSearch implements Response.Listener<TwitterSearchResult>, Re
         } else {
             search();
         }
+    }
+
+    public void setSearchListener(SearchListener searchListener) {
+        this.searchListener = searchListener;
     }
 }
