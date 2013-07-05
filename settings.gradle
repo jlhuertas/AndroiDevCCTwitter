@@ -1,1 +1,1 @@
-include ':AndroiDevCCTwitter', ':volley', ':TwitterModel'
+include ':actionbarsherlock', ':volley', ':TwitterModel', ':AndroiDevCCTwitter'

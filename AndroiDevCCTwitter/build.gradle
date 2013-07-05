@@ -9,8 +9,9 @@ dependencies {
 
 
     compile 'com.google.code.gson:gson:2.2.2'   //dependency from a Maven repo
-    compile project(':volley')                  //dependency from a local project
+    compile project(':volley')                  //dependency from a local Android Library
     compile project(':TwitterModel')            //dependency from a local project
+    compile project (':actionbarsherlock')       //dependency from a local Android Library
 }
 
 android {
