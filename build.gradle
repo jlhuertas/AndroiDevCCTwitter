@@ -9,8 +9,8 @@ buildscript {
     }
     dependencies {
         //Notice the '+' symbol to indicate dynamic dependency
-        //It will choose the newest release of the 0.4.x branch
-        classpath 'com.android.tools.build:gradle:0.4.+'
+        //It will choose the newest release of the 0.5.x branch
+        classpath 'com.android.tools.build:gradle:0.5.+'
     }
 }
 
